@@ -20,13 +20,13 @@ class TinocoButton extends StatelessWidget {
       child: OutlinedButton(
         onPressed: onPressed,
         style: OutlinedButton.styleFrom(
-          backgroundColor: isFiled ? CustomColors.customSecondaryColor : Colors.transparent,
+          backgroundColor: isFiled ? TinocoColors.tinocoSecondaryColor : Colors.transparent,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(18.0),
           ),
           side: BorderSide(
             width: 2,
-            color: CustomColors.customSecondaryColor,
+            color: TinocoColors.tinocoSecondaryColor,
           ),
         ),
         child: Text(

@@ -13,8 +13,8 @@ Map<int, Color> _swatchOpacity = {
   900: const Color.fromRGBO(50, 65, 112, 1),
 };
 
-abstract class CustomColors {
-  static Color customErrorColor = MaterialColor(0xFFD36868, _swatchOpacity);
-  static MaterialColor customSwatchColor = MaterialColor(0xFF324170, _swatchOpacity);
-  static MaterialColor customSecondaryColor = MaterialColor(0xFF11999E, _swatchOpacity);
+abstract class TinocoColors {
+  static Color tinocoErrorColor = MaterialColor(0xFFD36868, _swatchOpacity);
+  static MaterialColor tinocoSwatchColor = MaterialColor(0xFF324170, _swatchOpacity);
+  static MaterialColor tinocoSecondaryColor = MaterialColor(0xFF11999E, _swatchOpacity);
 }

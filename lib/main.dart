@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Tinoco Care Hospital',
       theme: ThemeData(
-        primarySwatch: CustomColors.customSwatchColor,
+        primarySwatch: TinocoColors.tinocoSwatchColor,
       ),
       home: SignInScreen(),
     );

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:tinoco_care_hospital/config/custom_colors.dart';
 import 'package:tinoco_care_hospital/view/auth/sign_up_screen.dart';
 import 'package:tinoco_care_hospital/widgets/button.dart';
-import 'package:tinoco_care_hospital/widgets/custom_text_field.dart';
+import 'package:tinoco_care_hospital/widgets/text_field.dart';
 
 class SignInScreen extends StatelessWidget {
   SignInScreen({super.key});
@@ -27,12 +27,12 @@ class SignInScreen extends StatelessWidget {
                 children: const <Widget>[
                   Text('Insira sua nova senha.'),
                   SizedBox(height: 20),
-                  CustomTextField(
+                  TinocoTextField(
                     icon: Icons.lock,
                     label: "senha",
                     isSecret: true,
                   ),
-                  CustomTextField(
+                  TinocoTextField(
                     icon: Icons.lock,
                     label: "senha",
                     isSecret: true,
@@ -57,7 +57,7 @@ class SignInScreen extends StatelessWidget {
     }
 
     return Scaffold(
-      backgroundColor: CustomColors.customSwatchColor,
+      backgroundColor: TinocoColors.tinocoSwatchColor,
       body: SingleChildScrollView(
         child: SizedBox(
           height: sizeScreen.height,
@@ -111,11 +111,11 @@ class SignInScreen extends StatelessWidget {
                         ),
                       ),
                       SizedBox(height: sizeScreen.height * 0.03),
-                      const CustomTextField(
+                      const TinocoTextField(
                         icon: Icons.email,
                         label: "E-mail",
                       ),
-                      const CustomTextField(
+                      const TinocoTextField(
                         icon: Icons.lock,
                         label: "senha",
                         isSecret: true,
@@ -127,7 +127,7 @@ class SignInScreen extends StatelessWidget {
                           child: Text(
                             "Esqueceu a senha?",
                             style: TextStyle(
-                              color: CustomColors.customSecondaryColor,
+                              color: TinocoColors.tinocoSecondaryColor,
                             ),
                           ),
                         ),

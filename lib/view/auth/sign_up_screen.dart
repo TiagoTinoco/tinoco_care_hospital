@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
 import 'package:tinoco_care_hospital/config/custom_colors.dart';
 import 'package:tinoco_care_hospital/widgets/button.dart';
-import 'package:tinoco_care_hospital/widgets/custom_text_field.dart';
+import 'package:tinoco_care_hospital/widgets/text_field.dart';
 
 class SignUpScreen extends StatelessWidget {
   SignUpScreen({super.key});
@@ -24,7 +24,7 @@ class SignUpScreen extends StatelessWidget {
     final sizeScreen = MediaQuery.of(context).size;
 
     return Scaffold(
-      backgroundColor: CustomColors.customSwatchColor,
+      backgroundColor: TinocoColors.tinocoSwatchColor,
       body: SingleChildScrollView(
         child: SizedBox(
           height: sizeScreen.height,
@@ -79,31 +79,31 @@ class SignUpScreen extends StatelessWidget {
                             ),
                           ),
                           SizedBox(height: sizeScreen.height * 0.03),
-                          CustomTextField(
+                          TinocoTextField(
                             icon: Icons.email,
                             label: "E-mail",
                             textInputType: TextInputType.emailAddress,
                             onSaved: (value) {},
                           ),
-                          CustomTextField(
+                          TinocoTextField(
                             icon: Icons.lock,
                             label: "Senha",
                             isSecret: true,
                             onSaved: (value) {},
                           ),
-                          CustomTextField(
+                          TinocoTextField(
                             icon: Icons.person,
                             label: "Nome",
                             onSaved: (value) {},
                           ),
-                          CustomTextField(
+                          TinocoTextField(
                             icon: Icons.phone,
                             label: "Celular",
                             inputFormatters: [phoneFormatter],
                             textInputType: TextInputType.phone,
                             onSaved: (value) {},
                           ),
-                          CustomTextField(
+                          TinocoTextField(
                             icon: Icons.file_copy,
                             label: "CPF",
                             inputFormatters: [cpfFormatter],

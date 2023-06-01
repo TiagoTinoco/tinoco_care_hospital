@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class CustomTextField extends StatefulWidget {
-  const CustomTextField({
+class TinocoTextField extends StatefulWidget {
+  const TinocoTextField({
     super.key,
     required this.icon,
     required this.label,
@@ -28,10 +28,10 @@ class CustomTextField extends StatefulWidget {
   final void Function(String?)? onSaved;
 
   @override
-  State<CustomTextField> createState() => _CustomTextFieldState();
+  State<TinocoTextField> createState() => TinocoTextFieldState();
 }
 
-class _CustomTextFieldState extends State<CustomTextField> {
+class TinocoTextFieldState extends State<TinocoTextField> {
   bool isObscure = false;
 
   @override
